@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "LIONIXY",
-  description: "AI Prompt Search Engine",
+  title: "LIONIXY | AI Prompt Search Engine",
+  description: "Search and discover high-performing prompts for AI tools.",
 };
 
 export default function RootLayout({
@@ -25,9 +25,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <Header />
-        {children}
+      <body className="bg-[var(--bg-main)] text-[var(--text-main)] antialiased">
+        <div className="relative min-h-screen">
+          <Header />
+          {children}
+        </div>
       </body>
     </html>
   );
