@@ -2,6 +2,7 @@ import Link from "next/link";
 import SearchBar from "@/components/search/SearchBar";
 import FeaturedCategories from "@/components/home/FeaturedCategories";
 
+
 export default function Home() {
   return (
     <main className="relative min-h-screen overflow-hidden bg-[var(--bg-main)] text-[var(--text-main)]">
